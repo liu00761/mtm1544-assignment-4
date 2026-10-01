@@ -43,7 +43,7 @@ body{
 }
 /* adds background colour, visible border, padding, and margins to .title*/
 
-.section{
+section{
    background-color: var(--backgroundcol);
    border:1px solid var(--tertiarycol);
    margin: 1rem;
@@ -84,6 +84,7 @@ p{
 img{
    aspect-ratio: auto;
    width: 100%;
+   margin-top: 1em;
 }
 /* sets fized aspect ratio for the image and sets width to 100 percent of its container, the container being the viewport */
 
@@ -100,3 +101,15 @@ button:hover,{
 }
 
 /* hover state on new button with color-mix for the text */
+
+a:hover a:focus{
+   color: var(--primarycol)
+}
+
+ul li:nth-child(odd){
+   background-color: var(--backgroundcol);
+}
+
+ul li:first-child{
+   background-color: beige;
+}
