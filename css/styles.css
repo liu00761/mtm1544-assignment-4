@@ -113,3 +113,33 @@ ul li:nth-child(odd){
 ul li:first-child{
    background-color: beige;
 }
+
+blockquote::before{
+   content: open-quote;
+}
+
+blockquote::after{
+   content: close-quote;
+}
+
+blockquote{
+   color :aliceblue;
+}
+
+/* changes blockquote colour to aliceblue */
+
+blockquote.quote{
+   color:aqua;
+}
+
+/* changes blockquote colour to aqua */
+
+#trailquote{
+   color: var(--bodyfont)
+}
+
+/* final change of blockquote colour to body font colour  overrides all previous rules*/
+
+:where(.title, section, ul li:first-child, button:hover){
+   color: var(--backgroundcol)
+}
